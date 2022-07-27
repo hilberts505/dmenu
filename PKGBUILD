@@ -6,7 +6,7 @@
 # Contributor: Jeff 'codemac' Mickey <jeff@archlinux.org>
 
 _pkgname=dmenu
-pkgname=$_pkgname-git
+pkgname=$_pkgname-jh
 pkgver=5.1.2.g534d9bb
 pkgrel=1
 pkgdesc="A generic menu for X"
@@ -16,7 +16,7 @@ license=('MIT')
 depends=('sh' 'libxinerama' 'libxft')
 makedepends=('git')
 provides=($_pkgname)
-conflicts=($_pkgname)
+conflicts=($_pkgname $_pkgname-git)
 source=(file://$PWD)
 sha256sums=('SKIP')
 
